@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>Javascript Math is the Coolest</title>
+</HEAD>
+
+
+<BODY>
+<SCRIPT type="text/javascript">
+	x = parseInt(prompt("Give me a first number.  (It should be between -4294267295 and 4294267295)"));
+	y = parseInt(prompt("Give me a second number.  (It should also be between -4294267295 and 4294267295)"));
+	z = parseInt(prompt("Give me a third number.  (It should still be between -4294267295 and 4294267295)"));
+	
+	sum = x + y + z;
+	product = x * y * z;
+	average = sum / 3;
+
+	//finding the largest number using nested ifs; an array would be more straightforward,
+	//so we can work this part again after we learn arrays.
+	if (x > y)
+		{
+		if (x > z)
+			{
+			largest = x;
+			}
+		else if (z > x)
+			{
+			largest = z;
+			}
+		}
+	else if (y > x)
+		{
+		if (y > z)
+			{
+			largest = y;
+			}
+		else if (z > x)
+			{
+			largest = z;
+			}
+		}
+	else if (x == y)
+		{
+		if (x == z)
+			{
+			largest = x;
+			}
+		}
+
+	//finidng the smallest number using nested ifs.
+	if (x < y)
+		{
+		if (x < z)
+			{
+			smallest = x;
+			}
+		else if (z < x)
+			{
+			smallest = z;
+			}
+		}
+	else if (y < x)
+		{
+		if (y < z)
+			{
+			smallest = y;
+			}
+		else if (z < x)
+			{
+			smallest = z;
+			}
+		}
+	else if (x == y)
+		{
+	 	if (x == z)
+	 		{
+			smallest = x;
+			}
+		}
+
+	
+	alert("The three numbers you gave me were: " + x + ", " + y + ", & " + z);
+	alert("The sum of is: " + sum);
+	alert("The product is: " + product);
+	alert("The average  is: " + average);
+	alert("The largest number is: " + largest);
+	alert("The smallest number is: " + smallest);
+	 
+</SCRIPT>
+</BODY>
+</HTML>
